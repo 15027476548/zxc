@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			.wutai{
+				width: 500px;
+				margin: 0 auto;
+				margin-top: 50px;
+				position: relative;
+			}
+			.ying{
+				width: 150px;
+				height: 50px;
+				background-color: #cfcfcf;
+				border-radius:150px 150px/50px 50px;
+				/*box-shadow: 0px 100px 5px 10px #7a7a7a;*/
+				position: absolute;
+				top: 400px;
+				/*animation: ying 1s 0s linear infinite;*/
+			}
+			.ying1{
+				animation: ying 0.5s 0s linear infinite;
+			}
+			.ying2{
+				left: 200px;
+				animation: ying 0.5s 0.1s linear infinite;
+			}
+			.ying3{
+				left: 400px;
+				animation: ying 0.5s 0.2s linear infinite;
+			}
+			.qiu1{
+				left: 25px;
+				animation: qiu 0.5s 0s linear infinite;
+				background-color: red;
+			}
+			.qiu2{
+				left: 225px;
+				animation: qiu 0.5s 0.1s linear infinite;
+				background-color: green;
+			}
+			.qiu3{
+				left: 425px;
+				animation: qiu 0.5s 0.2s linear infinite;
+				background-color: pink;
+			}
+			.qiu{
+				width: 100px;
+				height: 100px;
+				/*background-color: red;*/
+				border-radius: 50px;
+				position: absolute;
+				/*animation: qiu 1s 0s linear infinite;*/
+			}
+			@keyframes ying{
+				0%{}
+				50%{transform:scale(0.5);background-color:#7a7a7a;}
+			}
+			@keyframes qiu{
+				0%{}
+				50%{transform: translateY(325px);}
+			}
+	</style>
+</head>
+<body>
+	<div class="wutai">
+		<div class="ying ying1"></div>
+		<div class="ying ying2"></div>
+		<div class="ying ying3"></div>
+		<div class="qiu qiu1"></div>
+		<div class="qiu qiu2"></div>
+		<div class="qiu qiu3"></div>
+	</div>
+</body>
+</html>
